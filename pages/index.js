@@ -13,7 +13,7 @@ export default function Login() {
     // Simple authentication check (you would replace this with actual logic)
     if (email === 'Hanah@edumental.com' && password === 'password123') {
       // Redirect to dashboard after successful login
-      router.push('./dashboard.js');
+      router.push('/dashboard');
     } else {
       // Display error if login fails
       setError('Invalid email or password');
@@ -30,7 +30,7 @@ export default function Login() {
 
           {/* Title */}
           <h3 className="text-lg font-semibold text-black mb-6">
-            Sign Up to Edumental
+            Sign In to Edumental
           </h3>
 
           {/* Display error if login fails */}
@@ -105,7 +105,7 @@ export default function Login() {
           {/* Already have an account */}
           <div className="mt-8 text-center">
             <span className="text-gray-500">Have an account?</span>
-            <a href="#" className="text-black font-semibold ml-2 hover:underline">
+            <a href="/login" className="text-black font-semibold ml-2 hover:underline">
               Sign in
             </a>
           </div>
@@ -113,7 +113,7 @@ export default function Login() {
       </div>
 
       {/* Right side: Background image */}
-      <div className="hidden md:flex w-1/2 bg-cover bg-center" style={{ backgroundImage: "url('/abstract-placeholder.jpg')" }}>
+      <div className="hidden md:flex w-1/2 bg-cover bg-center" style={{ backgroundImage: "url('https://www.vexels.com/png-svg/preview/235447/brain-stroke-icon-top-view')" }}>
         {/* Background could be replaced with a more artistic image or gradient */}
       </div>
     </div>

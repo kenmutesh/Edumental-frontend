@@ -1,36 +1,21 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
       <aside className="w-64 bg-white shadow-lg p-5">
-        <h2 className="text-xl font-semibold mb-6">EduMental</h2>
+        <h2 className="text-xl font-semibold mb-6 text-black">EduMental</h2>
         <nav className="space-y-4">
-          <a href="#" className="block text-gray-600 hover:text-black">
-            Dashboard
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-black">
-            Modules
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-black">
-            Inbox
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-black">
-            Notifications
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-black">
-            Challenges
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-black">
-            Calendar
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-black">
-            Submissions
-          </a>
-          <a href="#" className="block text-gray-600 hover:text-black">
-            My Account
-          </a>
+          <Link href="#" className="block text-black hover:text-black">Dashboard</Link>
+          <Link href="#" className="block text-black hover:text-black">Modules</Link>
+          <Link href="#" className="block text-black hover:text-black">Inbox</Link>
+          <Link href="#" className="block text-black hover:text-black">Notifications</Link>
+          <Link href="#" className="block text-black hover:text-black">Challenges</Link>
+          <Link href="#" className="block text-black hover:text-black">Calendar</Link>
+          <Link href="#" className="block text-black hover:text-black">Submissions</Link>
+          <Link href="#" className="block text-black hover:text-black">My Account</Link>
         </nav>
       </aside>
 
@@ -39,8 +24,8 @@ export default function Home() {
         {/* Top Bar */}
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h2 className="text-2xl font-semibold">Welcome Back, Jack</h2>
-            <p className="text-gray-500">Great to have you back</p>
+            <h2 className="text-2xl font-semibold text-black">Welcome back, Hanah</h2>
+            <p className="text-black">Great to have you back</p>
           </div>
           <div className="flex items-center space-x-4">
             <input
@@ -58,26 +43,26 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Enrolled */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-semibold mb-4">Enrolled</h3>
-            <p className="text-4xl font-bold">3</p>
+            <h3 className="text-lg font-semibold mb-4 text-black">Enrolled</h3>
+            <p className="text-4xl font-bold text-black">3</p>
           </div>
 
           {/* Completed */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-semibold mb-4">Completed</h3>
-            <p className="text-4xl font-bold">2</p>
+            <h3 className="text-lg font-semibold mb-4 text-black">Completed</h3>
+            <p className="text-4xl font-bold text-black">2</p>
           </div>
 
           {/* Points Earned */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-semibold mb-4">Points Earned</h3>
-            <p className="text-4xl font-bold">50</p>
+            <h3 className="text-lg font-semibold mb-4 text-black">Points Earned</h3>
+            <p className="text-4xl font-bold text-black">50</p>
           </div>
 
           {/* Daily Progress */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-semibold mb-4">Daily Progress</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-semibold mb-4 text-black">Daily Progress</h3>
+            <ul className="space-y-2 text-black">
               <li>Coping Strategies</li>
               <li>Mindfulness Techniques</li>
               <li>Emotion Regulation</li>
@@ -86,8 +71,8 @@ export default function Home() {
 
           {/* Recent Enrolled Modules */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-semibold mb-4">Recent Enrolled Modules</h3>
-            <div className="flex justify-between">
+            <h3 className="text-lg font-semibold mb-4 text-black">Recent Enrolled Modules</h3>
+            <div className="flex justify-between text-black">
               <p>Understanding Anxiety</p>
               <span>4/10 Lesson</span>
             </div>
@@ -98,8 +83,8 @@ export default function Home() {
 
           {/* Coping Strategies */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-semibold mb-4">Coping Strategies</h3>
-            <div className="flex justify-between">
+            <h3 className="text-lg font-semibold mb-4 text-black">Coping Strategies</h3>
+            <div className="flex justify-between text-black">
               <p>Coping Strategies</p>
               <span>4/20 Lesson</span>
             </div>
@@ -110,37 +95,37 @@ export default function Home() {
         </div>
 
         {/* Module Summary */}
-        <h2 className="text-2xl font-semibold mt-8 mb-6">Module Summary</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-6 text-black">Module Summary</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md flex justify-between items-center">
             <div>
-              <h4 className="text-lg font-semibold">Emotional Intelligence</h4>
-              <p className="text-gray-500">2:30hr - 14 Lessons</p>
+              <h4 className="text-lg font-semibold text-black">Emotional Intelligence</h4>
+              <p className="text-black">2:30hr - 14 Lessons</p>
             </div>
-            <button className="text-gray-500">Practice Assignment</button>
+            <button className="text-black">Practice Assignment</button>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md flex justify-between items-center">
             <div>
-              <h4 className="text-lg font-semibold">Developing Emotional Maturity</h4>
-              <p className="text-gray-500">2:30hr - 14 Lessons</p>
+              <h4 className="text-lg font-semibold text-black">Developing Emotional Maturity</h4>
+              <p className="text-black">2:30hr - 14 Lessons</p>
             </div>
-            <button className="text-gray-500">Practice Assessment</button>
+            <button className="text-black">Practice Assessment</button>
           </div>
         </div>
 
         {/* Upcoming Session */}
-        <h2 className="text-2xl font-semibold mt-8 mb-6">Upcoming Session</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-6 text-black">Upcoming Session</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md flex justify-between items-center">
             <div>
-              <h4 className="text-lg font-semibold">Understanding Your Purpose</h4>
-              <p className="text-gray-500">5:30pm</p>
+              <h4 className="text-lg font-semibold text-black">Understanding Your Purpose</h4>
+              <p className="text-black">5:30pm</p>
             </div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md flex justify-between items-center">
             <div>
-              <h4 className="text-lg font-semibold">Redefining Yourself</h4>
-              <p className="text-gray-500">2:30pm</p>
+              <h4 className="text-lg font-semibold text-black">Redefining Yourself</h4>
+              <p className="text-black">2:30pm</p>
             </div>
           </div>
         </div>
