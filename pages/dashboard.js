@@ -1,9 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen bg-gray-100">
+      <Head>
+        <title>Edumental</title>  
+      </Head>
       {/* Sidebar */}
       <aside className="w-64 bg-white shadow-lg p-5">
         <h2 className="text-xl font-semibold mb-6 text-black">EduMental</h2>

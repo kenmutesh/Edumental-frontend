@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -22,6 +23,9 @@ export default function Login() {
 
   return (
     <div className="flex min-h-screen bg-gray-100">
+      <Head>
+        <title>Login - Edumental</title>
+      </Head>
       {/* Left side: Form */}
       <div className="flex flex-col justify-center w-full md:w-1/2 bg-white p-8 md:p-16">
         <div className="max-w-md mx-auto">
