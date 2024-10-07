@@ -13,7 +13,7 @@ export default function Login() {
     // Simple authentication check (you would replace this with actual logic)
     if (email === 'Hanah@edumental.com' && password === 'password123') {
       // Redirect to dashboard after successful login
-      router.push('/dashboard.js');
+      router.push('./dashboard.js');
     } else {
       // Display error if login fails
       setError('Invalid email or password');
